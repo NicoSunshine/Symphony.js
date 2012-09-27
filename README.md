@@ -1,20 +1,22 @@
-<p>
-Symphony.js is a simple and lightweight (~= 700 bytes gzipped) templating script for creating dynamic content for your site.
+#Symphony.js
 
+####Symphony is a simple and lightweight (~= 700 bytes gzipped) templating script for creating dynamic content for your site.
+
+<p>
 The main idea behind the script is the insertion of new content via innerHTML.
 </p>
 
-#Template Options
+##Template Options
 
 The template string supports the following options:
- * {/key}: the "key" will be searched in the object or html passed as a parameter to the compose method and replaced by it's value.
- * {/$key}: the "key" will be left intact but will be accesible to replace using a custom function (this can be done passing a replace function in the constructor or, if you're using an object to pass parameters, passing a function. Tests for more info, at least for now).
- * {/key?default}: same as above, but if the "key" isn't present in the object or html, the "default" is left instead.
- * {/$key?default}: same as above, but if the "key" isn't replaced, the "default" is left instead.
+ * **{/key}**: the "key" will be searched in the object or html passed as a parameter to the compose method and replaced by it's value.
+ * **{/$key}**: the "key" will be left intact but will be accesible to replace using a custom function (this can be done passing a replace function in the constructor or, if you're using an object to pass parameters, passing a function. Tests for more info, at least for now).
+ * **{/key?default}**: same as above, but if the "key" isn't present in the object or html, the "default" is left instead.
+ * **{/$key?default}**: same as above, but if the "key" isn't replaced, the "default" is left instead.
 
 Some use exaples are:
 
-#Basic usage
+##Basic usage
 
 	var html= "This is {/something} with one {/otherthing} in it.";
 			  
@@ -34,7 +36,7 @@ Some use exaples are:
 	//"This is some awesome thing with one epic value in it.
 	//"This is fantastic stuff with one amazing thing in it.
 
-#Custom values and default
+##Custom values and default
 
 	// <div id='test' style='display:none;'>
 	// 		<div>
@@ -64,4 +66,4 @@ Some use exaples are:
 	//"This is a custom value n°1 and a value default."
 
 
-Website coming soon, if you want to see more examples, feel free to browse the tests.
+Website coming soon with the full docs, if you want to see more examples, feel free to browse the tests.
