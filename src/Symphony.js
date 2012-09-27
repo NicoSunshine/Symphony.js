@@ -1,5 +1,5 @@
 /*!
- * Symphony
+ * Symphony.js
  * Site coming soon
  *
  * Copyright 2012 Nicolas Santangelo <nicosunshine@gmail.com>
